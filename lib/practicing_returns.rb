@@ -8,8 +8,7 @@ def hello(array)
     yield(array[i])
     i += 1
   end
-  binding.pry
-  collection
+ collection
 end
 
 hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
